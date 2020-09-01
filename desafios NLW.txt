@@ -1,0 +1,14 @@
+NLW desafios:
+
+01
+
+.-mostrar pagina de sucesso apos o cadastro do proffy
+.- aguardar 2 segundos e redireccionar para a listagem
+dos proffys, com filtro
+	-use setTimeout para aguardar 2 segundos
+	-location href=""
+
+02
+.- nao permitir o usuario colocar um novo campo de dia 
+e horario se o dia e hora anterior estiver vazio
+.- Funcionalidade de deletar um campo de dia e hora

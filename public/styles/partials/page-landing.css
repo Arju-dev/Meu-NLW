@@ -1,0 +1,150 @@
+
+
+#page-landing {
+    background: var(--color-primary);
+}
+
+#page-landing #container {
+    color: var(--color-text-in-primary);
+}
+
+.logo-container img {
+    height: 10rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+.logo-container h2 {
+    font-weight: 500px;
+    font-size: 3.6rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+.hero-image{
+    width: 100%;
+}
+
+
+.buttons-container {
+    display: flex;
+    justify-content: center; 
+     margin: 3.2rem 0;
+}/*justify- content: center;
+so funciona com display: flex;*/
+
+.buttons-container a {
+    width: 30rem;
+    height: 10.4rem;
+
+    border-radius: .8rem;
+    margin-right: 1.6rem;
+
+    font: 700 2.4rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: background 0.2s;
+
+    color: var(--color-button-text);
+} /*border-radius tambien puede ser usado en el mismo orden 
+de margin, en la medida que adiciono variantes puede arredondar
+una esquina y la siguiente y la siguiente*/
+
+.buttons-container a img {
+    width: 4rem;
+    margin-right: 2.4rem;
+}
+
+.buttons-container a.study {
+    background: var(--color-primary-lighter);
+}
+.buttons-container a.study:hover {
+    background: var(--color-primary-light);
+}/* o estado hover quer disser o estado quando o 
+mouse esta encima
+de um elemento*/
+.buttons-container a.give-classes {
+    background: var(--color-secundary);
+    margin-right: 0;
+}
+.buttons-container a.give-classes:hover{
+    background: var(--color-secundary-dark);
+}
+
+.total-connections {
+    font-size: 1.8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-connectios img {
+    margin-left:  0.8rem;
+}
+/*esta estrategia de css se llama media quarrys que é uma regra
+do css que aplicara solo para otros (padroes) dispositivos, en e
+este caso aplicara de 1100px para arriba */
+@media (max-width: 1100px) {
+    :root {
+        font-size: 40%;/* modificar as medidas rem */
+    
+    }
+
+    .hero-image {
+        height: 45rem;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    #page-landing #container {
+        max-width: 1100px;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 350px 104px;
+        grid-template-areas:
+         "proffy image image"
+         "button button texting";
+        column-gap: 87px;
+        row-gap: 86px;
+    }
+    /*recuerda que puedes verificar con f12 en la opcion
+    para otros dispositivos para testar la modificacion*/
+    .logo-container {
+        grid-area: proffy;
+        text-align: initial;
+        align-self: center;
+        margin: 0;
+    }
+    .logo-container img {
+        height: 127px;
+    }
+
+    .hero-image {
+        grid-area: image;
+        height: 350px;
+    }
+
+    .buttons-container {
+        grid-area: button;
+        justify-content: flex-start;
+        margin: 0;
+    }
+
+    .total-connections {
+        grid-area: texting;
+        justify-self: end;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+

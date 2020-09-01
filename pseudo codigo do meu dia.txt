@@ -1,0 +1,73 @@
+INICIO DO DIA:
+.-acorda, 07: 30 =
+
+	.sai da cama e estica o corpo
+
+	.vai andando ate o banheiro{
+		-fazer chichi
+		-escobar o dente
+		-lavar o rosto
+		}
+
+.-volta ao quarto, 08: 00 =
+
+	.troca de roupa
+
+	.function = vai na cozinha {
+		(se tiver as coisas){
+	
+		-fazer cafe
+		-fazer vitamina
+		-preparar pão ou cereal
+		-serve a comida na mesa
+		-senta
+		-come
+	} (se nao tiver as coisas) {
+
+		-vai no mercado
+		-vai na cozinha
+	}
+
+		}
+
+.-vai na escrivaninha 09:00 = 
+	-estudar logica
+	- treinar codigos
+	- dar continuidade nas aulas
+	
+.- vai para a cozinha 13:00 =
+	function = almoço {
+		(se tiver as coisass)
+		-preparar almoço
+		-comer
+	} (se nao tiver as coisas) {
+		- vai no mercado
+		- almoço
+	}
+
+.-vai na escrivaninha 15:00 =
+	- atender clientes
+	- combinar entregas
+		(se tiver entregas) = {
+			-entregar
+		} 
+		
+.- espalnhar a cabeça 18h =
+	-tocar violao
+	-fazer yoga
+	-ler
+	-assistir algo
+.- vai no banheiro 21h = 
+ 	-tomar banho
+	- escobar o dente
+.- vai no quarto 22h =
+	-trocar de rouap
+	-durmir
+
+	FIM DO DIA.
+	
+
+	
+	
+	
+
